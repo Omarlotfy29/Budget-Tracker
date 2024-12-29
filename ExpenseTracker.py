@@ -68,7 +68,7 @@ def summarize_expenses(expense_file_path, budget):
    with open(expense_file_path, 'r') as infile:
       lines = infile.readlines()
       for line in lines:
-        expense_name, expense_amount, expense_category = line.strip().split(",") #Look up Split
+        expense_name, expense_amount, expense_category = line.strip().split(",") 
         line_expense = Expense(name=expense_name, amount=float(expense_amount), category=expense_category)
         expenses.append(line_expense)
     
